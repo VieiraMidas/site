@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+ <head>
+  <title>O Modelo OSI</title>
+  <meta charset="UTF-8" />
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+ </head>
+ <body background="http://agenda2020.com.br/wp-content/uploads/2013/10/Computer-Technology.jpg">
+  <nav class="navbar navbar-expand-lg navbar-light bg-dark">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Camadas do Modelo OSI</a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Dropdown
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="#">Definição das Camadas</a>
+          <div class="dropdown-divider"></div>
+        </div>
+      </li>
+    </ul>
+    <form class="form-inline my-2 my-lg-0">
+      <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Procurar</button>
+    </form>
+  </div>
+</nav>
+  <form>
+  <div class="form-group bg-light" id="site">
+    <h1><center>O que é o Modelo OSI?</center></h1>
+    <br>
+    <p>O Modelo OSI, que do inglês Open System Interconnection, é um modelo de rede de computador que é divido em 7 camadas de funções, com o objetivo de ser um padrão, para protocolos de comunicação entre os mais diversos sistemas de uma rede local, garantindo a comunicação entre dois sistemas computacionais.</p>
+    <br>
+   <br>
+   <h1>Como funciona cada camada?</h1>
+   <br>
+   <p>Cada camada do Modelo OSI é responsável por uma determinada operação, sendo denominadas como:</p>
+   <p>7. Camada de aplicação;<br>
+6. Camada de apresentação;<br>
+5. Camada de sessão;<br>
+4. Camada de transporte;<br>
+3. Camada de rede;<br>
+2. Camada de enlace de dados;<br>
+1. Camada física.</p>
+   <br>
+   <h1>Definição de camadas:</h1>
+   <p><strong><u>Camada Física</u> -</strong> é camada que define as especializações elétricas e físicas dos dispositivos, portanto, ela quem define se a transmissão pode ser ou não realizada nos dois sentidos simultaneamente, seja por meio elétrico, ópticas, mecânico ou funcional para o meio físico.</p>
+   <p><strong><u>Camada de Enlace de Dados (ou Ligação de Dados)</u> -</strong> é camada que detecta e corrige erros que possam acontecer no nível físico, controlando o fluxo(recepção, delimitação e transmissão de quadros) e também estabelece um protocolo de comunicação entre sistemas diretamente conectados.</p>
+   <p><strong><u>Camada de Rede</u> -</strong> é camada que fornece os meios funcionais e de procedimento de transferência de comprimento varável de dados de sequências de uma fonte de acolhimento de uma rede para um host de destino numa rede, portanto ela realiza o roteamento de funções, e também pode realizar a fragmentação e remotagem e os erros de entrega de relatório.</p> 
+   <p>Essa camada de rede pode ser dividida em três subcamadas:</p>
+   <p>++++Sub-rede de acesso - considera protocolos que lidam com a interface para redes;</p>
+   <p>++++Sub-rede dependente de convergência - necessária para elevar o nível de uma rede de trânsito, até ao nível de redes em cada lado;</p>
+   <p>++++Sub-rede independente de convergência -  lida com a transferência através de múltiplas redes. Controla a operação da sub rede roteamento de pacotes, controle de congestionamento, tarifação e permite que redes heterogêneas sejam interconectadas.</p>
+   <p><strong><u>Camada de Transporte</u> -</strong> é camada responsável por receber os dados enviados pela camada de sessão e segmentá-los ara que sejam enviados a camada de rede, logo, ela cuida do controle de fluxo, ordenação dos pacotes e correção de erros, evitando, dessa forma, que as mensagens sejam entregues sem erros, sem perdas ou duplicações. Ela pode operar em dois modos:</p>
+   <p>++++Orientado à conexão - Mais confiável(entrega o TPDU) e garante a ordenação das informações, mas depende do overhead para realizar o serviço.</p>
+   <p>++++Não-Orientado à conexão - Menos confiável(não entrega o TPDU) e não garante a ordenação das informações, mas por se tratar em uma rede local, não depende do overhead para realizar o serviço.</p>
+   <p><strong><u>Camada de Sessão</u> -</strong> é a camada responsável pela troca de dados e a comunicação de hosts, dessa forma, em uma mesma página dois computadores podem se comunicar (semelhantemente aos jogos online).</p>
+   <p><strong><u>Camada de Apresentação</u> -</strong> é camada que converte o formato do dado recebido pela camada de Aplicação em um formato comum a ser usado na transmissão de dados que seja compreensivo para o protocolo. </p>
+   <p><strong><u>Camada de Aplicação</u> -</strong> é camada que corresponde às aplicações no topo da camada OSI que promoverão a interação da máquina do usuário com o destinatário. </p>
+  </div>
+</form>
+ </body>
+</html>
